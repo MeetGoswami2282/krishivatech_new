@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+            <script src="script.js"></script>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <title>Home Page</title>
+  </head>
+  
+  <body>
+
+    <!-- NAVBAR NAV BAR NAVBAR NAVBAR -->
+
+<header class="relative z-50 bg-white border-b sticky top-0 z-50 px-4 py-4">
+  <div class="max-w-[1330px] mx-auto px-4 ">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <img src="asset/krishiva-techlogo.svg" class="h-24
+    " alt="">
+        <!-- <span class="font-bold text-lg">Krishiva Tech</span> -->
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex gap-8">
+        <a class="hover:text-blue-600 text-xl" href="index.html">Home</a>
+        <a class="text-blue-600 font-medium text-xl" href="our_services.html" >Services</a>
+        <a class="hover:text-blue-600 text-xl" href="#">Case Studies</a>
+        <a class="hover:text-blue-600 text-xl" href="about_us.html">About</a>
+        <a class="hover:text-blue-600 text-xl" href="contact_us.html">Contact</a>
+      </nav>
+
+      <!-- Desktop Buttons -->
+      <div class="hidden lg:flex gap-3">
+        <button class="border border-green-500 text-green-600 px-4 py-2 rounded-lg">WhatsApp</button>
+        <button class="border px-4 py-2 rounded-lg">Get Quote</button>
+        <button class="bg-black text-white px-5 py-2 rounded-lg">Start Project</button>
+      </div>
+
+      <!-- Mobile Button -->
+      <button id="menuBtn" class="lg:hidden">
+        <svg id="openIcon" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-width="2" stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="closeIcon" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-width="2" stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu"
+       class="hidden absolute top-20 left-0 w-full bg-white border-t shadow-lg lg:hidden">
+    <div class="px-6 py-6 space-y-4">
+      <a class="block " href="index.html">Home</a>
+      <a class="block text-blue-600 font-medium" href="#">Services</a>
+      <a class="block" href="case_studies.html">Case Studies</a>
+      <a class="block" href="about_us.html">About</a>
+      <a class="block" href="contact_us.html">Contact</a>
+
+      <div class="pt-4 space-y-3">
+        <button class="w-full border border-green-500 text-green-600 py-2 rounded-lg">
+          WhatsApp
+        </button>
+        <button class="w-full border py-2 rounded-lg">
+          Get Quote
+        </button>
+        <button class="w-full bg-black text-white py-2 rounded-lg">
+          Start Project
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="our-service bg-[#eef3ff]">
+
+
+<section class=" max-w-[1330px] mx-auto">
+  <div class="max-w-7xl mx-auto px-6 py-20 text-center">
+
+    <span class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow">
+      🚀 Comprehensive Software Solutions
+    </span>
+
+    <h1 class="mt-6 text-3xl md:text-4xl font-bold text-gray-900">
+      Our Software Development Services
+    </h1>
+
+    <p class="mt-4 max-w-3xl mx-auto text-gray-600">
+      From custom software development to enterprise solutions, we provide
+      end-to-end services to transform your business and drive digital innovation.
+    </p>
+
+    <a href="#"
+       class="inline-flex items-center gap-2 mt-8 bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition">
+      Get Started Today →
+    </a>
+
+  </div>
+</section>
+
+</div>
+<!-- SERVICES -->
+<section class="max-w-[1330px] mx-auto px-6 py-20 space-y-12">
+
+  <!-- SERVICE CARD -->
+  <div class="border rounded-2xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center bg-white">
+
+    <!-- Left -->
+    <div>
+      <div class="flex items-center gap-3 mb-4">
+        <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">
+          💻
+        </div>
+        <h3 class="text-xl font-bold">Custom Software Development</h3>
+      </div>
+
+      <p class="text-gray-600 mb-6">
+        Tailored software solutions designed specifically for your business
+        needs, built with modern technologies and scalable architecture.
+      </p>
+
+      <!-- Features -->
+      <h4 class="font-semibold mb-2">Key Features:</h4>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-600 mb-6">
+        <li class="text-base">• Requirements Analysis</li>
+        <li class="text-base" >• Custom Architecture Design</li>
+        <li class="text-base">• Scalable Solutions</li>
+        <li class="text-base">• Legacy System Integration</li>
+        <li class="text-base">• Performance Optimization</li>
+      </ul>
+
+      <!-- Tech -->
+      <h4 class="font-semibold mb-2">Technologies:</h4>
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 text-xs border rounded-full">Angular</span>
+        <span class="px-3 py-1 text-xs border rounded-full">React</span>
+        <span class="px-3 py-1 text-xs border rounded-full">Node.js</span>
+        <span class="px-3 py-1 text-xs border rounded-full">Python</span>
+        <span class="px-3 py-1 text-xs border rounded-full">Java</span>
+        <span class="px-3 py-1 text-xs border rounded-full">PostgreSQL</span>
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div class="flex justify-center">
+      <img src="asset/software.svg"
+           alt="Custom Software"
+           class="w-full max-w-md">
+    </div>
+
+  </div>
+
+  <!-- SERVICE CARD -->
+<div class="border rounded-2xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center bg-white">
+  <div>
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">📱</div>
+      <h3 class="text-xl font-bold">Mobile App Development</h3>
+    </div>
+
+    <p class="text-gray-600 mb-6">
+      High-performance mobile applications for iOS and Android with seamless UI and
+      engaging user experience.
+    </p>
+
+    <h4 class="font-semibold mb-2">Key Features:</h4>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-600 mb-6">
+      <li class="text-base">• iOS & Android Apps</li>
+      <li class="text-base">• Cross-Platform Solutions</li>
+      <li class="text-base">• Smooth UI/UX</li>
+      <li class="text-base">• Push Notifications</li>
+      <li class="text-base">• App Store Deployment</li>
+    </ul>
+
+    <h4 class="font-semibold mb-2">Technologies:</h4>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 text-xs border rounded-full">Flutter</span>
+      <span class="px-3 py-1 text-xs border rounded-full">React Native</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Swift</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Kotlin</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Firebase</span>
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <img src="asset/software.svg" alt="Mobile App Development" class="w-full max-w-md">
+  </div>
+</div>
+
+
+  <!-- SERVICE CARD -->
+<div class="border rounded-2xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center bg-white">
+  <div>
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">🌐</div>
+      <h3 class="text-xl font-bold">Web Application Development</h3>
+    </div>
+
+    <p class="text-gray-600 mb-6">
+      Modern, responsive, and secure web applications optimized for performance and scalability.
+    </p>
+
+    <h4 class="font-semibold mb-2">Key Features:</h4>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-600 mb-6">
+      <li class="text-base">• Responsive Design</li>
+      <li class="text-base">• Secure Authentication</li>
+      <li class="text-base">• API Integration</li>
+      <li class="text-base">• High Performance</li>
+      <li class="text-base">• SEO Friendly</li>
+    </ul>
+
+    <h4 class="font-semibold mb-2">Technologies:</h4>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 text-xs border rounded-full">HTML</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Tailwind CSS</span>
+      <span class="px-3 py-1 text-xs border rounded-full">JavaScript</span>
+      <span class="px-3 py-1 text-xs border rounded-full">React</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Node.js</span>
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <img src="asset/software.svg" alt="Web Application Development" class="w-full max-w-md">
+  </div>
+</div>
+
+
+  <!-- SERVICE CARD -->
+<div class="border rounded-2xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center bg-white">
+  <div>
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">🛒</div>
+      <h3 class="text-xl font-bold">eCommerce Development</h3>
+    </div>
+
+    <p class="text-gray-600 mb-6">
+      End-to-end eCommerce solutions with secure payments, inventory management,
+      and smooth checkout experiences.
+    </p>
+
+    <h4 class="font-semibold mb-2">Key Features:</h4>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-600 mb-6">
+      <li class="text-base">• Product Management</li>
+      <li class="text-base">• Secure Payment Gateway</li>
+      <li class="text-base">• Order Tracking</li>
+      <li class="text-base">• Inventory Management</li>
+      <li class="text-base">• Customer Accounts</li>
+    </ul>
+
+    <h4 class="font-semibold mb-2">Technologies:</h4>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 text-xs border rounded-full">Shopify</span>
+      <span class="px-3 py-1 text-xs border rounded-full">WooCommerce</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Magento</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Laravel</span>
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <img src="asset/software.svg" alt="eCommerce Development" class="w-full max-w-md">
+  </div>
+</div>
+
+
+  <!-- SERVICE CARD -->
+<div class="border rounded-2xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center bg-white">
+  <div>
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">🎨</div>
+      <h3 class="text-xl font-bold">UI/UX Design</h3>
+    </div>
+
+    <p class="text-gray-600 mb-6">
+      User-centered design solutions that create intuitive, engaging, and conversion-focused experiences.
+    </p>
+
+    <h4 class="font-semibold mb-2">Key Features:</h4>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-600 mb-6">
+      <li class="text-base">• User Research</li>
+      <li class="text-base">• Wireframing</li>
+      <li class="text-base">• Prototyping</li>
+      <li class="text-base">• Usability Testing</li>
+      <li class="text-base">• Visual Design</li>
+    </ul>
+
+    <h4 class="font-semibold mb-2">Technologies:</h4>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 text-xs border rounded-full">Figma</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Adobe XD</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Sketch</span>
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <img src="asset/software.svg" alt="UI UX Design" class="w-full max-w-md">
+  </div>
+</div>
+
+
+  <!-- SERVICE CARD -->
+
+  <div class="border rounded-2xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center bg-white">
+  <div>
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">☁️</div>
+      <h3 class="text-xl font-bold">SaaS Development</h3>
+    </div>
+
+    <p class="text-gray-600 mb-6">
+      Scalable Software-as-a-Service platforms with multi-tenant architecture,
+      subscription management, and cloud deployment.
+    </p>
+
+    <h4 class="font-semibold mb-2">Key Features:</h4>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-600 mb-6">
+      <li class="text-base">• Multi-tenant Architecture</li>
+      <li class="text-base">• API Development</li>
+      <li class="text-base">• Analytics Dashboard</li>
+      <li class="text-base">• Subscription Management</li>
+      <li class="text-base">• Cloud Deployment</li>
+    </ul>
+
+    <h4 class="font-semibold mb-2">Technologies:</h4>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 text-xs border rounded-full">AWS</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Azure</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Google Cloud</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Docker</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Kubernetes</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Microservices</span>
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <img src="asset/software.svg" alt="SaaS Development" class="w-full max-w-md">
+  </div>
+</div>
+
+
+  <!-- SERVICE CARD -->
+
+  <div class="border rounded-2xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center bg-white">
+  <div>
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">🧠</div>
+      <h3 class="text-xl font-bold">Software Consulting</h3>
+    </div>
+
+    <p class="text-gray-600 mb-6">
+      Expert guidance on technology strategy, architecture decisions,
+      and digital transformation to maximize ROI.
+    </p>
+
+    <h4 class="font-semibold mb-2">Key Features:</h4>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-600 mb-6">
+      <li class="text-base">• Technology Assessment</li>
+      <li class="text-base">• Digital Strategy</li>
+      <li class="text-base">• Code Audits</li>
+      <li class="text-base">• Architecture Review</li>
+      <li class="text-base">• Team Augmentation</li>
+    </ul>
+
+    <h4 class="font-semibold mb-2">Technologies:</h4>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 text-xs border rounded-full">Best Practices</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Industry Standards</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Agile Methodologies</span>
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <img src="asset/software.svg" alt="Software Consulting" class="w-full max-w-md">
+  </div>
+</div>
+
+
+  <!-- SERVICE CARD -->
+
+  <div class="border rounded-2xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center bg-white">
+  <div>
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">🏢</div>
+      <h3 class="text-xl font-bold">Enterprise Solutions</h3>
+    </div>
+
+    <p class="text-gray-600 mb-6">
+      Comprehensive CRM, ERP, and HR management solutions
+      to streamline operations and enhance productivity.
+    </p>
+
+    <h4 class="font-semibold mb-2">Key Features:</h4>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-600 mb-6">
+      <li class="text-base">• CRM Systems</li>
+      <li class="text-base">• ERP Solutions</li>
+      <li class="text-base">• HR Management</li>
+      <li class="text-base">• Workflow Automation</li>
+      <li class="text-base">• Business Intelligence</li>
+    </ul>
+
+    <h4 class="font-semibold mb-2">Technologies:</h4>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 text-xs border rounded-full">Salesforce</span>
+      <span class="px-3 py-1 text-xs border rounded-full">SAP</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Microsoft Dynamics</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Oracle</span>
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <img src="asset/software.svg" alt="Enterprise Solutions" class="w-full max-w-md">
+  </div>
+</div>
+
+
+  <!-- SERVICE CARD -->
+
+  <div class="border rounded-2xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center bg-white">
+  <div>
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">📡</div>
+      <h3 class="text-xl font-bold">Internet of Things (IoT)</h3>
+    </div>
+
+    <p class="text-gray-600 mb-6">
+      IoT solutions including sensor integration, real-time monitoring,
+      and control systems for smart devices.
+    </p>
+
+    <h4 class="font-semibold mb-2">Key Features:</h4>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-600 mb-6">
+      <li class="text-base">• Sensor Integration</li>
+      <li class="text-base">• Device Control</li>
+      <li class="text-base">• Edge Computing</li>
+      <li class="text-base">• Real-time Monitoring</li>
+      <li class="text-base">• Data Analytics</li>
+    </ul>
+
+    <h4 class="font-semibold mb-2">Technologies:</h4>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 text-xs border rounded-full">Arduino</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Raspberry Pi</span>
+      <span class="px-3 py-1 text-xs border rounded-full">MQTT</span>
+      <span class="px-3 py-1 text-xs border rounded-full">LoRaWAN</span>
+      <span class="px-3 py-1 text-xs border rounded-full">AWS IoT</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Azure IoT</span>
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <img src="asset/software.svg" alt="IoT Solutions" class="w-full max-w-md">
+  </div>
+</div>
+
+
+  <!-- SERVICE CARD -->
+
+<div class="border rounded-2xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center bg-white">
+  <div>
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">🔗</div>
+      <h3 class="text-xl font-bold">API Services</h3>
+    </div>
+
+    <p class="text-gray-600 mb-6">
+      Custom API development and third-party integrations
+      for seamless system communication.
+    </p>
+
+    <h4 class="font-semibold mb-2">Key Features:</h4>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-600 mb-6">
+      <li class="text-base">• RESTful APIs</li>
+      <li class="text-base">• Third-party Integrations</li>
+      <li class="text-base">• Rate Limiting & Security</li>
+      <li class="text-base">• GraphQL</li>
+      <li class="text-base">• API Documentation</li>
+    </ul>
+
+    <h4 class="font-semibold mb-2">Technologies:</h4>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 text-xs border rounded-full">Node.js</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Express</span>
+      <span class="px-3 py-1 text-xs border rounded-full">FastAPI</span>
+      <span class="px-3 py-1 text-xs border rounded-full">GraphQL</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Swagger</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Postman</span>
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <img src="asset/software.svg" alt="API Services" class="w-full max-w-md">
+  </div>
+</div>
+
+  <!-- SERVICE CARD -->
+<div class="border rounded-2xl p-8 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center bg-white">
+  <div>
+    <div class="flex items-center gap-3 mb-4">
+      <div class="w-10 h-10 rounded-lg bg-blue-100 flex items-center justify-center">🛠️</div>
+      <h3 class="text-xl font-bold">IT Support &amp; Maintenance</h3>
+    </div>
+
+    <p class="text-gray-600 mb-6">
+      Comprehensive IT support and maintenance services to ensure your software
+      systems run smoothly, securely, and remain up to date.
+    </p>
+
+    <h4 class="font-semibold mb-2">Key Features:</h4>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-gray-600 mb-6">
+      <li class="text-base">• 24/7 Monitoring</li>
+      <li class="text-base">• Bug Fixes</li>
+      <li class="text-base">• Performance Optimization</li>
+      <li class="text-base">• Technical Support</li>
+      <li class="text-base">• Security Updates</li>
+    </ul>
+
+    <h4 class="font-semibold mb-2">Technologies:</h4>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 text-xs border rounded-full">Monitoring Tools</span>
+      <span class="px-3 py-1 text-xs border rounded-full">CI/CD</span>
+      <span class="px-3 py-1 text-xs border rounded-full">DevOps</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Cloud Infrastructure</span>
+      <span class="px-3 py-1 text-xs border rounded-full">Security Tools</span>
+    </div>
+  </div>
+
+  <div class="flex justify-center">
+    <img src="asset/software.svg" alt="IT Support and Maintenance" class="w-full max-w-md">
+  </div>
+</div>
+
+
+</section>
+
+
+
+
+</body>

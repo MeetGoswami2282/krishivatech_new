@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+            <script src="script.js"></script>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <title>Contact</title>
+  </head>
+  
+  <body>
+
+    <!-- NAVBAR NAV BAR NAVBAR NAVBAR -->
+
+<header class="relative z-50 bg-white border-b sticky top-0 z-50 px-4 py-4">
+  <div class="max-w-[1330px] mx-auto px-4 ">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Logo -->
+      <div class="flex items-center gap-2">
+        <img src="asset/krishiva-techlogo.svg" class="h-24
+    " alt="">
+        <!-- <span class="font-bold text-lg">Krishiva Tech</span> -->
+      </div>
+
+      <!-- Desktop Menu -->
+      <nav class="hidden lg:flex gap-8">
+        <a class="hover:text-blue-600 text-xl" href="index.html">Home</a>
+        <a  class="hover:text-blue-600 text-xl" href="our_services.html" >Services</a>
+        <a class="hover:text-blue-600 text-xl" href="case_studies.html">Case Studies</a>
+        <a class="text-blue-600 font-medium text-xl" href="#">About</a>
+        <a class="hover:text-blue-600 text-xl" href="contact_us.html">Contact</a>
+      </nav>
+
+      <!-- Desktop Buttons -->
+      <div class="hidden lg:flex gap-3">
+        <button class="border border-green-500 text-green-600 px-4 py-2 rounded-lg">WhatsApp</button>
+        <button class="border px-4 py-2 rounded-lg">Get Quote</button>
+        <button class="bg-black text-white px-5 py-2 rounded-lg">Start Project</button>
+      </div>
+
+      <!-- Mobile Button -->
+      <button id="menuBtn" class="lg:hidden">
+        <svg id="openIcon" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-width="2" stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        <svg id="closeIcon" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-width="2" stroke-linecap="round" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+
+    </div>
+  </div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobileMenu"
+       class="hidden absolute top-20 left-0 w-full bg-white border-t shadow-lg lg:hidden">
+    <div class="px-6 py-6 space-y-4">
+      <a class="block " href="index.html">Home</a>
+      <a class="block" href="our_services.html">Services</a>
+      <a class="block" href="case_studies.html">Case Studies</a>
+      <a class="block text-blue-600 font-medium" href="#">About</a>
+      <a class="block" href="contact_us.html">Contact</a>
+
+      <div class="pt-4 space-y-3">
+        <button class="w-full border border-green-500 text-green-600 py-2 rounded-lg">
+          WhatsApp
+        </button>
+        <button class="w-full border py-2 rounded-lg">
+          Get Quote
+        </button>
+        <button class="w-full bg-black text-white py-2 rounded-lg">
+          Start Project
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HERO SECTION HERO SECTION HERO SECTION HERO SECTION HERO SECTION  -->
+
+<div class="hero-section bg-gradient-to-br from-[#eef3ff] to-[#f8fbff]">
+
+<section class="bg-gradient-to-br from-[#eef3ff] to-[#f7faff]">
+  <div class="max-w-7xl mx-auto px-6 py-20">
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+
+      <!-- LEFT CONTENT -->
+      <div>
+
+        <!-- Badge -->
+        <span class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full text-sm font-medium shadow mb-6">
+          🏆 Trusted Since 2014
+        </span>
+
+        <!-- Heading -->
+        <h1 class="text-3xl md:text-4xl xl:text-5xl font-bold text-gray-900 leading-tight">
+          About Krishiva Tech
+        </h1>
+
+        <!-- Description -->
+        <p class="mt-6 text-gray-600 text-lg max-w-xl leading-relaxed">
+          We are a leading software development company with over 10 years of
+          experience in delivering innovative, scalable, and reliable software
+          solutions to businesses worldwide.
+        </p>
+
+        <!-- Buttons -->
+        <div class="mt-8 flex flex-col sm:flex-row gap-4">
+          <a href="#"
+             class="inline-flex items-center justify-center gap-2 bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition">
+            Work With Us →
+          </a>
+
+          <a href="#"
+             class="inline-flex items-center justify-center gap-2 bg-white border border-gray-300 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">
+            Our Services
+          </a>
+        </div>
+
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="flex justify-center lg:justify-end">
+        <div class="bg-white rounded-2xl shadow-xl p-6">
+          <img
+            src="asset/aa.jpg"
+            alt="Krishiva Tech Team"
+            class="w-full max-w-md object-contain"
+          />
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</div>
+
+
+
+<!-- OUR MISSION AND VISION OUR MISSION AND VISION OUR MISSION AND VISION OUR MISSION AND VISION  -->
+
+
+<section class="max-w-7xl mx-auto px-6 py-16">
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+    <!-- Our Mission -->
+    <div class="border rounded-xl p-8 bg-white">
+      <h3 class="text-xl font-semibold text-blue-600 mb-4">
+        Our Mission
+      </h3>
+      <p class="text-gray-600 leading-relaxed">
+        To empower businesses with innovative software solutions that drive
+        growth, improve efficiency, and create lasting value. We are committed
+        to delivering exceptional quality while building long-term partnerships
+        with our clients.
+      </p>
+    </div>
+
+    <!-- Our Vision -->
+    <div class="border rounded-xl p-8 bg-white">
+      <h3 class="text-xl font-semibold text-blue-600 mb-4">
+        Our Vision
+      </h3>
+      <p class="text-gray-600 leading-relaxed">
+        To be the global leader in custom software development, recognized for
+        our innovation, quality, and client success. We envision a future where
+        technology seamlessly integrates with business to create unlimited
+        possibilities.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- OUR TRACK RECORD OUR TRACK RECORD OUR TRACK RECORD OUR TRACK RECORD -->
+
+<div class="track-record bg-[#F9FAFB]">
+
+
+<section class="max-w-7xl mx-auto px-6 py-20 text-center">
+
+  <!-- Heading -->
+  <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+    Our Track Record
+  </h2>
+
+  <p class="mt-3 text-gray-600">
+    Numbers that speak to our experience and success
+  </p>
+
+  <!-- Stats -->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-10 text-center mt-28">
+
+    <div>
+      <h2 class="text-4xl font-bold text-blue-600">
+        <span class="counter" data-target="11" data-suffix="">0</span>
+      </h2>
+      <p class="mt-2 text-gray-600">Years of Experience</p>
+    </div>
+
+    <div>
+      <h2 class="text-4xl font-bold text-blue-600">
+        <span class="counter" data-target="79" data-suffix="+">0</span>
+      </h2>
+      <p class="mt-2 text-gray-600">Projects Completed</p>
+    </div>
+
+    <div>
+      <h2 class="text-4xl font-bold text-blue-600">
+        <span class="counter" data-target="15" data-suffix="+">0</span>
+      </h2>
+      <p class="mt-2 text-gray-600">Industries Served</p>
+    </div>
+
+    <div>
+      <h2 class="text-4xl font-bold text-blue-600">
+        <span class="counter" data-target="15" data-suffix="+">0</span>
+      </h2>
+      <p class="mt-2 text-gray-600">Country Worked With</p>
+    </div>
+
+  </div>
+
+</section>
+</div>
+
+
+<!-- OUR CORE VALUE OUR CORE VALUE OUR CORE VALUE OUR CORE VALUE  -->
+
+<section class="max-w-[1330px] mx-auto px-6 py-20">
+
+  <!-- Heading -->
+  <div class="text-center max-w-2xl mx-auto mb-14">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+      Our Core Values
+    </h2>
+    <p class="mt-3 text-gray-600">
+      The principles that guide everything we do
+    </p>
+  </div>
+
+  <!-- Cards -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+    <!-- Card 1 -->
+    <div class="border rounded-xl p-8 text-center bg-white">
+      <div class="w-14 h-14 mx-auto mb-6 rounded-full bg-blue-100 flex items-center justify-center">
+        <!-- Target Icon -->
+        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" stroke-width="2"/>
+          <circle cx="12" cy="12" r="5" stroke-width="2"/>
+          <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
+        </svg>
+      </div>
+      <h3 class="font-semibold text-lg mb-2">
+        Innovation First
+      </h3>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        We stay ahead of technology trends to deliver cutting-edge solutions
+        that give our clients a competitive advantage.
+      </p>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="border rounded-xl p-8 text-center bg-white">
+      <div class="w-14 h-14 mx-auto mb-6 rounded-full bg-blue-100 flex items-center justify-center">
+        <!-- Users Icon -->
+        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            d="M17 20h5v-2a4 4 0 00-4-4h-1M9 20H4v-2a4 4 0 014-4h1M16 7a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+      </div>
+      <h3 class="font-semibold text-lg mb-2">
+        Client-Centric Approach
+      </h3>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Your success is our success. We work closely with you to understand
+        your needs and exceed your expectations.
+      </p>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="border rounded-xl p-8 text-center bg-white">
+      <div class="w-14 h-14 mx-auto mb-6 rounded-full bg-blue-100 flex items-center justify-center">
+        <!-- Badge Icon -->
+        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            d="M12 2l3 6 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1z" />
+        </svg>
+      </div>
+      <h3 class="font-semibold text-lg mb-2">
+        Quality Excellence
+      </h3>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        We maintain the highest standards in code quality, testing, and
+        project delivery to ensure reliable solutions.
+      </p>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="border rounded-xl p-8 text-center bg-white">
+      <div class="w-14 h-14 mx-auto mb-6 rounded-full bg-blue-100 flex items-center justify-center">
+        <!-- Heart Icon -->
+        <svg class="w-7 h-7 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+        </svg>
+      </div>
+      <h3 class="font-semibold text-lg mb-2">
+        Passionate Team
+      </h3>
+      <p class="text-gray-600 text-sm leading-relaxed">
+        Our team is passionate about technology and committed to creating
+        solutions that make a real difference.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- READY TO TRANSFORM READY TO TRANSFORM READY TO TRANSFORM READY TO TRANSFORM -->
+
+<div class="ready-to-transorm">
+    <section class="bg-blue-600">
+  <div class="max-w-7xl mx-auto px-6 py-16 text-center text-white">
+
+    <h2 class="text-3xl md:text-4xl font-bold">
+      Ready to Transform Your Business?
+    </h2>
+
+    <p class="mt-4 max-w-2xl mx-auto text-blue-100">
+      Let's discuss your project and create a custom software solution that
+      drives your success.
+    </p>
+
+    <!-- Buttons -->
+    <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+
+      <a href="#"
+         class="inline-flex items-center justify-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition">
+        Start Your Project →
+      </a>
+
+      <a href="#"
+         class="inline-flex items-center justify-center gap-2 border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-600 transition">
+        Learn More About Us
+      </a>
+
+    </div>
+
+  </div>
+</section>
+</div>
+
+
+<!-- FOOTER FOOTER FOOTER FOOTER  -->
+ <footer class="bg-gradient-to-r from-[#0b1324] to-[#0e1a2f] text-gray-300">
+  <div class="max-w-7xl mx-auto px-6 py-16">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+      <!-- Brand -->
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <img src="asset/krishiva-techlogo.svg" alt="Krishiva Tech" class="h-24">
+          <!-- <span class="text-xl font-bold text-white">Krishiva Tech</span> -->
+        </div>
+
+        <p class="text-sm leading-relaxed">
+          Leading software development company delivering innovative,
+          scalable, and reliable solutions to businesses worldwide.
+        </p>
+
+        <!-- Badges -->
+        <div class="flex gap-3 mt-6">
+          <img src="badge1.png" class="h-16" alt="">
+          <img src="badge2.png" class="h-16" alt="">
+          <img src="badge3.png" class="h-16" alt="">
+        </div>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h4 class="text-white font-semibold mb-4">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white">Custom Software Development</a></li>
+          <li><a href="#" class="hover:text-white">Mobile App Development</a></li>
+          <li><a href="#" class="hover:text-white">Web Application Development</a></li>
+          <li><a href="#" class="hover:text-white">eCommerce Development</a></li>
+          <li><a href="#" class="hover:text-white">UI/UX Design</a></li>
+          <li><a href="#" class="hover:text-white">SaaS Development</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h4 class="text-white font-semibold mb-4">Company</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-white">About Us</a></li>
+          <li><a href="#" class="hover:text-white">Our Services</a></li>
+          <li><a href="#" class="hover:text-white">Case Studies</a></li>
+          <li><a href="#" class="hover:text-white">Contact</a></li>
+          <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+          <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="text-white font-semibold mb-4">Contact</h4>
+
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-2">
+            📧 <span>krishivatech@gmail.com</span>
+          </li>
+          <li class="flex items-start gap-2">
+            📞 <span>+91 955 882 6853</span>
+          </li>
+          <li class="flex items-start gap-2">
+            📍 <span>Sankalp Infinity, Ahmedabad, IN 382330</span>
+          </li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="flex gap-4 mt-4 text-lg">
+          <a href="#" class="hover:text-white">in</a>
+          <a href="#" class="hover:text-white">X</a>
+          <a href="#" class="hover:text-white">ig</a>
+          <a href="#" class="hover:text-white">fb</a>
+        </div>
+
+        <!-- WhatsApp Button -->
+        <a href="#"
+           class="inline-block mt-6 bg-green-500 text-white px-5 py-2 rounded-lg font-medium hover:bg-green-600 transition">
+          WhatsApp Us
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-white/10 mt-12 pt-6 text-center text-sm text-gray-400">
+      © 2026 Krishiva Tech. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+
+</body>
+
+
