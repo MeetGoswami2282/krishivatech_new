@@ -1,4 +1,35 @@
     
+//   NUMBERS NUMBERS NUMBERS NUMBERS
+
+ document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+
+    counters.forEach(counter => {
+      const target = Number(counter.dataset.target);
+      const suffix = counter.dataset.suffix || "";
+      let count = 0;
+
+      const duration = 1200; // total animation time (ms)
+      const stepTime = 20;
+      const steps = duration / stepTime;
+      const increment = target / steps;
+
+      const updateCounter = () => {
+        count += increment;
+
+        if (count < target) {
+          counter.textContent = Math.floor(count);
+          setTimeout(updateCounter, stepTime);
+        } else {
+          counter.textContent = target + suffix;
+        }
+      };
+
+      updateCounter();
+    });
+  });
+
+
 const words = [
 
 
@@ -70,35 +101,7 @@ const words = [
   });
 
 
-//   NUMBERS NUMBERS NUMBERS NUMBERS
 
- document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll(".counter");
-
-    counters.forEach(counter => {
-      const target = Number(counter.dataset.target);
-      const suffix = counter.dataset.suffix || "";
-      let count = 0;
-
-      const duration = 1200; // total animation time (ms)
-      const stepTime = 20;
-      const steps = duration / stepTime;
-      const increment = target / steps;
-
-      const updateCounter = () => {
-        count += increment;
-
-        if (count < target) {
-          counter.textContent = Math.floor(count);
-          setTimeout(updateCounter, stepTime);
-        } else {
-          counter.textContent = target + suffix;
-        }
-      };
-
-      updateCounter();
-    });
-  });
 
 
 //   TESTIMONIAL TESTIMONIAL TESTIMONIAL TESTIMONIAL
