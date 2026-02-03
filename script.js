@@ -1,3 +1,59 @@
+    
+const words = [
+
+
+    "Custom Software",
+"Custom Web Apps",
+"Custom Mobile Apps",
+"SaaS Development",
+"UI/UX Design",
+"API Services",
+
+  ];
+
+  const typingSpeed = 80;      // don't use 0
+  const deletingSpeed = 50;
+  const holdAfterType = 1000;
+
+  let wordIndex = 0;
+  let charIndex = 0;
+  let isDeleting = false;
+
+  const el = document.getElementById("typingText");
+
+  function typeEffect() {
+    const currentWord = words[wordIndex];
+
+    if (!isDeleting) {
+      // Typing
+      el.textContent = currentWord.substring(0, charIndex + 1);
+      charIndex++;
+
+      if (charIndex === currentWord.length) {
+        setTimeout(() => {
+          isDeleting = true;
+          typeEffect(); // 🔥 THIS WAS MISSING
+        }, holdAfterType);
+        return;
+      }
+    } else {
+      // Deleting
+      el.textContent = currentWord.substring(0, charIndex - 1);
+      charIndex--;
+
+      if (charIndex === 0) {
+        isDeleting = false;
+        wordIndex = (wordIndex + 1) % words.length;
+      }
+    }
+
+    setTimeout(typeEffect, isDeleting ? deletingSpeed : typingSpeed);
+  }
+
+  typeEffect();
+    
+    
+    
     // NAVBAR NAV BAR NAVBAR NAVBAR 
 
       document.addEventListener("DOMContentLoaded", () => {
@@ -74,3 +130,7 @@
       updateSlider();
     });
   });
+
+
+
+ 

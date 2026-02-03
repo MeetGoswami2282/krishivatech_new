@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-            <script src="script.js"></script>
 
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -13,6 +12,8 @@
 
     <title>Home Page</title>
   </head>
+  
+
   
   <body>
 
@@ -119,11 +120,11 @@
           digital landscape.
         </p> -->
 
-        <h1 class="mt-6 text-4xl sm:text-5xl xl:text-6xl font-extrabold text-gray-900 leading-tight">
+        <h1 class="mt-6 text-4xl sm:text-5xl xl:text-5xl font-extrabold text-gray-900 leading-tight">
   Transform Your <br />
   Business with <br />
 
-  <span class="text-blue-600">
+  <span class="text-blue-600 xl:text-5xl">
     <span id="typingText"></span><span class="cursor">|</span>
   </span>
 </h1>
@@ -135,71 +136,6 @@
   improve efficiency, and give you a competitive edge in today’s
   digital landscape.
 </p>
-
-<style>
-  .cursor {
-    display: inline-block;
-    margin-left: 2px;
-    animation: blink 1s steps(1) infinite;
-  }
-
-  @keyframes blink {
-    50% {
-      opacity: 0;
-    }
-  }
-</style>
-
-<script>
-  const words = [
-    // "Custom Software Development",
-    // "Web Applications Development",
-    "Mobile App Development",
-    "UI/UX Design",
-    "AI Solutions"
-  ];
-
-  const typingSpeed = 80;      // don't use 0
-  const deletingSpeed = 50;
-  const holdAfterType = 1000;
-
-  let wordIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-
-  const el = document.getElementById("typingText");
-
-  function typeEffect() {
-    const currentWord = words[wordIndex];
-
-    if (!isDeleting) {
-      // Typing
-      el.textContent = currentWord.substring(0, charIndex + 1);
-      charIndex++;
-
-      if (charIndex === currentWord.length) {
-        setTimeout(() => {
-          isDeleting = true;
-          typeEffect(); // 🔥 THIS WAS MISSING
-        }, holdAfterType);
-        return;
-      }
-    } else {
-      // Deleting
-      el.textContent = currentWord.substring(0, charIndex - 1);
-      charIndex--;
-
-      if (charIndex === 0) {
-        isDeleting = false;
-        wordIndex = (wordIndex + 1) % words.length;
-      }
-    }
-
-    setTimeout(typeEffect, isDeleting ? deletingSpeed : typingSpeed);
-  }
-
-  typeEffect();
-</script>
 
 
 
@@ -870,12 +806,9 @@
   </div>
 </footer>
 
+    <script src="script.js"></script>
 
 
 </body>
 </html>
-
-
-
-  </body>
   
